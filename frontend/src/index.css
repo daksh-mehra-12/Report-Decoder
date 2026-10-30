@@ -1,0 +1,245 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  color-scheme: light dark;
+  /* User requested palette: Charcoal, Pale Mint, Sage Green, Forest Green */
+  --color-charcoal: #25292B;
+  --color-pale-mint: #E5EEE6;
+  --color-sage-green: #A5BEB0;
+  --color-forest-green: #204D3B;
+
+  --color-navy-950: #25292B;
+  --color-navy-900: #204D3B;
+  --color-navy-800: #2C3E35;
+  --color-navy-700: #3D5A4C;
+  --color-border: #3D5A4C;
+  --color-cyan: #A5BEB0;
+  --color-teal: #204D3B;
+  --color-text-muted: #52635B;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #020B16;
+  color: #F8FAFC;
+  overflow-x: hidden;
+}
+
+/* ─── Typography ─────────────────────────────────────── */
+.font-mono, code, kbd, pre {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+/* ─── Selection ──────────────────────────────────────── */
+::selection {
+  background: rgba(34, 211, 238, 0.25);
+  color: #fff;
+}
+
+/* ─── Glassmorphism ──────────────────────────────────── */
+.glass-panel {
+  background: rgba(10, 24, 39, 0.7);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(22, 40, 62, 0.88);
+  border-color: rgba(34, 211, 238, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px -10px rgba(34, 211, 238, 0.12);
+}
+
+/* ─── Scrollbars ─────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0B132B;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A3A56;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #22D3EE;
+}
+
+/* ─── Animations ─────────────────────────────────────── */
+
+/* Slow breathe/pulse */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50%       { opacity: 0.8; transform: scale(1.04); }
+}
+.animate-glow { animation: pulseGlow 4s ease-in-out infinite; }
+
+/* Floating upward drift */
+@keyframes floatUp {
+  0%   { transform: translateY(0px);   opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { transform: translateY(-20px); opacity: 0; }
+}
+.animate-float { animation: floatUp 6s ease-in-out infinite; }
+
+/* Scanline shimmer */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(34,211,238,0.08) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 2.5s ease-in-out infinite;
+}
+
+/* Slide-in from bottom */
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.animate-slide-in { animation: slideInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both; }
+
+/* Fade In */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+.animate-fade-in { animation: fadeIn 0.5s ease both; }
+
+/* Slow rotate */
+@keyframes slowSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.animate-slow-spin { animation: slowSpin 20s linear infinite; }
+
+/* Ping variant (smaller) */
+@keyframes pingSmall {
+  75%, 100% { transform: scale(1.6); opacity: 0; }
+}
+.animate-ping-sm { animation: pingSmall 1.5s cubic-bezier(0, 0, 0.2, 1) infinite; }
+
+/* Medical cross blink */
+@keyframes medBlink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+.animate-med-blink { animation: medBlink 2s ease-in-out infinite; }
+
+/* Gradient position shift */
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradientShift 6s ease infinite;
+}
+
+/* Number count-up flicker */
+@keyframes countUp {
+  from { opacity: 0; transform: scale(0.85); }
+  to   { opacity: 1; transform: scale(1); }
+}
+.animate-count { animation: countUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+
+/* ─── Component Tokens ───────────────────────────────── */
+
+/* Card glow shadows */
+.shadow-glow-cyan  { box-shadow: 0 0 20px rgba(34, 211, 238, 0.15); }
+.shadow-glow-teal  { box-shadow: 0 0 20px rgba(20, 184, 166, 0.15); }
+.shadow-glow-amber { box-shadow: 0 0 20px rgba(251, 191, 36, 0.15); }
+
+/* Premium border gradients (use as ::before pseudo-element parent) */
+.border-gradient-cyan {
+  position: relative;
+}
+.border-gradient-cyan::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(34,211,238,0.4), transparent, rgba(20,184,166,0.2));
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Stat badge */
+.stat-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid;
+}
+.stat-badge-cyan {
+  background: rgba(34, 211, 238, 0.1);
+  color: #22D3EE;
+  border-color: rgba(34, 211, 238, 0.25);
+}
+.stat-badge-teal {
+  background: rgba(20, 184, 166, 0.1);
+  color: #14B8A6;
+  border-color: rgba(20, 184, 166, 0.25);
+}
+.stat-badge-amber {
+  background: rgba(251, 191, 36, 0.1);
+  color: #FBBF24;
+  border-color: rgba(251, 191, 36, 0.25);
+}
+.stat-badge-rose {
+  background: rgba(244, 63, 94, 0.1);
+  color: #F43F5E;
+  border-color: rgba(244, 63, 94, 0.25);
+}
+
+/* Hide scrollbar but keep functionality */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ─── Background Utilities ───────────────────────────── */
+.bg-radial-vignette {
+  background: radial-gradient(ellipse at center, transparent 60%, rgba(2, 11, 22, 0.7) 100%);
+}
+
+.bg-medical-grid {
+  background-image:
+    linear-gradient(rgba(34, 211, 238, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(34, 211, 238, 0.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* ─── Recharts Overrides ─────────────────────────────── */
+.recharts-default-legend { font-size: 11px; }
+.recharts-legend-item-text { color: #9DB2C3 !important; }
+.recharts-cartesian-axis-tick text { font-size: 10px; fill: #9DB2C3; }
+.recharts-tooltip-wrapper { outline: none; }
+
+/* ─── Tailwind: dark mode strategy ──────────────────── */
+/* Using class="" strategy already applied via bg in HTML */

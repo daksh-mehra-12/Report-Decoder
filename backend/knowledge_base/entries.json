@@ -1,0 +1,199 @@
+[
+  {
+    "canonical_code": "CBC_HEMOGLOBIN",
+    "test_name": "Hemoglobin",
+    "verified_aliases": ["Hb", "Hgb", "Haemoglobin", "Total Hemoglobin"],
+    "standard_unit": "g/dL",
+    "definition": "Hemoglobin is an iron-rich protein inside red blood cells that carries oxygen from the lungs to tissues throughout the body and transports carbon dioxide back to the lungs.",
+    "test_purpose": "Used as part of a Complete Blood Count (CBC) to assess oxygen-carrying capacity, screen for anemia or erythrocytosis, and monitor nutritional or hematologic status.",
+    "what_it_measures": "The concentration of hemoglobin protein in a given volume of whole blood.",
+    "clinical_significance_high": "Elevated hemoglobin can occur with chronic low blood oxygen (such as high altitude or smoking), dehydration, or marrow conditions. It is not an automatic diagnosis of disease.",
+    "clinical_significance_low": "Low hemoglobin indicates reduced oxygen-carrying capacity, commonly seen in iron or vitamin deficiencies, chronic inflammatory conditions, or blood loss. It warrants clinician evaluation.",
+    "dietary_lifestyle_factors": "Hydration status directly affects blood volume and measured concentration. High-altitude residence naturally increases baseline hemoglobin.",
+    "doctor_questions_bank": [
+      "What could be contributing to this hemoglobin level given my recent symptoms and diet?",
+      "Does this result suggest we should check iron, ferritin, or vitamin B12 levels?",
+      "Could dehydration or recent fluid intake have influenced this reading?",
+      "Do you recommend repeating this test or doing a complete blood count review?"
+    ],
+    "sources": [
+      {
+        "source_id": "MEDLINEPLUS_HEMOGLOBIN",
+        "name": "Hemoglobin Test",
+        "organization": "National Library of Medicine (MedlinePlus)",
+        "url": "https://medlineplus.gov/lab-tests/hemoglobin-test/",
+        "trust_tier": "Primary Patient-Friendly",
+        "description": "Patient educational guide on hemoglobin indications, procedure, and interpretation."
+      },
+      {
+        "source_id": "ICMR_ANEMIA_GUIDELINES",
+        "name": "ICMR Clinical Guidelines on Anemia Detection",
+        "organization": "Indian Council of Medical Research (ICMR)",
+        "url": "https://main.icmr.nic.in/",
+        "trust_tier": "National Clinical Guideline",
+        "description": "Evidence-based thresholds and nutritional recommendations for anemia in Indian populations."
+      }
+    ],
+    "review_status": "Approved",
+    "last_reviewed": "2026-03-01",
+    "version": "1.0.0"
+  },
+  {
+    "canonical_code": "CBC_PLATELETS",
+    "test_name": "Platelet Count",
+    "verified_aliases": ["Platelets", "PLT", "Thrombocyte Count"],
+    "standard_unit": "10^3/uL",
+    "definition": "Platelets (thrombocytes) are small, disk-shaped cell fragments produced in bone marrow that play a vital role in blood clotting and wound repair.",
+    "test_purpose": "Evaluates bleeding risk, bone marrow platelet production, and clotting competence during routine screening or before surgical procedures.",
+    "what_it_measures": "The total number of circulating platelets in a microliter of blood.",
+    "clinical_significance_high": "Elevated platelet counts (thrombocytosis) can be a reactive response to recent infection, acute inflammation, iron deficiency, or marrow disorders.",
+    "clinical_significance_low": "Decreased platelet counts (thrombocytopenia) may increase bruising or bleeding tendencies, seen in viral infections, immune clearance, or certain medications.",
+    "dietary_lifestyle_factors": "Platelet clumping in collection tubes (pseudothrombocytopenia) can cause artificially low laboratory readings.",
+    "doctor_questions_bank": [
+      "Could recent viral illness, fever, or medication have temporarily affected my platelet count?",
+      "Are there signs of clotting or unusual bruising I should watch for?",
+      "Would you advise a peripheral blood smear to rule out platelet clumping?"
+    ],
+    "sources": [
+      {
+        "source_id": "MEDLINEPLUS_PLATELET",
+        "name": "Platelet Tests",
+        "organization": "National Library of Medicine (MedlinePlus)",
+        "url": "https://medlineplus.gov/lab-tests/platelet-tests/",
+        "trust_tier": "Primary Patient-Friendly",
+        "description": "Overview of platelet counts and clotting diagnostic principles."
+      }
+    ],
+    "review_status": "Approved",
+    "last_reviewed": "2026-03-01",
+    "version": "1.0.0"
+  },
+  {
+    "canonical_code": "METABOLIC_FASTING_GLUCOSE",
+    "test_name": "Fasting Blood Glucose",
+    "verified_aliases": ["Fasting Blood Sugar", "FBS", "Glucose Fasting", "Blood Sugar Fasting"],
+    "standard_unit": "mg/dL",
+    "definition": "Fasting blood glucose measures the concentration of sugar (glucose) circulating in the bloodstream after an overnight fast (typically 8 to 12 hours).",
+    "test_purpose": "Screens for prediabetes, diabetes mellitus, or hypoglycemia, and monitors blood sugar regulation.",
+    "what_it_measures": "Serum or plasma glucose concentration in a fasted metabolic state.",
+    "clinical_significance_high": "Higher-than-reference levels can indicate impaired fasting glucose or insulin resistance. Acute stress or illness can also elevate glucose transiently.",
+    "clinical_significance_low": "Low glucose levels (hypoglycemia) can occur with prolonged fasting, vigorous exercise, or certain medications, potentially causing dizziness or sweating.",
+    "dietary_lifestyle_factors": "Strict adherence to fasting (water only) is necessary for an accurate measurement. Morning stress or poor sleep can cause minor elevations.",
+    "doctor_questions_bank": [
+      "Does this result warrant an HbA1c test to see my average blood sugar over the past 3 months?",
+      "How strictly does fasting duration affect this specific result?",
+      "Are there dietary adjustments or physical activity steps we should discuss?"
+    ],
+    "sources": [
+      {
+        "source_id": "MEDLINEPLUS_GLUCOSE",
+        "name": "Blood Glucose Test",
+        "organization": "National Library of Medicine (MedlinePlus)",
+        "url": "https://medlineplus.gov/lab-tests/blood-glucose-test/",
+        "trust_tier": "Primary Patient-Friendly",
+        "description": "Patient guidelines for blood sugar testing and preparation."
+      },
+      {
+        "source_id": "WHO_DIABETES_BENCHMARK",
+        "name": "Diagnostic Criteria for Diabetes and Intermediate Hyperglycemia",
+        "organization": "World Health Organization (WHO)",
+        "url": "https://www.who.int/india/health-topics",
+        "trust_tier": "Global Public Health Standard",
+        "description": "WHO global diagnostic thresholds for fasting blood glucose."
+      }
+    ],
+    "review_status": "Approved",
+    "last_reviewed": "2026-03-01",
+    "version": "1.0.0"
+  },
+  {
+    "canonical_code": "LIPID_TOTAL_CHOLESTEROL",
+    "test_name": "Total Cholesterol",
+    "verified_aliases": ["Cholesterol Total", "Serum Cholesterol"],
+    "standard_unit": "mg/dL",
+    "definition": "Total cholesterol measures the combined sum of all circulating cholesterol fractions, including low-density lipoproteins (LDL), high-density lipoproteins (HDL), and very low-density lipoproteins (VLDL).",
+    "test_purpose": "Helps assess cardiovascular risk and informs lipid management alongside blood pressure and lifestyle factors.",
+    "what_it_measures": "Total concentration of cholesterol sterols in blood serum or plasma.",
+    "clinical_significance_high": "Elevated cholesterol levels are associated with increased long-term risk of plaque buildup in blood vessels. It must be interpreted in conjunction with HDL, LDL, and personal risk profile.",
+    "clinical_significance_low": "Very low total cholesterol is uncommon and can be seen in malabsorption, hyperthyroidism, or severe liver dysfunction.",
+    "dietary_lifestyle_factors": "Dietary saturated fat, exercise habits, genetics, and age play substantial roles in circulating cholesterol levels.",
+    "doctor_questions_bank": [
+      "How do my HDL and LDL breakdown ratios look compared to total cholesterol?",
+      "Given my age and family history, how should we interpret this cardiovascular risk profile?",
+      "What lifestyle or nutritional changes would be most effective as a first step?"
+    ],
+    "sources": [
+      {
+        "source_id": "MEDLINEPLUS_CHOLESTEROL",
+        "name": "Cholesterol Levels",
+        "organization": "National Library of Medicine (MedlinePlus)",
+        "url": "https://medlineplus.gov/lab-tests/cholesterol-levels/",
+        "trust_tier": "Primary Patient-Friendly",
+        "description": "Patient guide explaining lipid fractions, total cholesterol, and cardiovascular health."
+      }
+    ],
+    "review_status": "Approved",
+    "last_reviewed": "2026-03-01",
+    "version": "1.0.0"
+  },
+  {
+    "canonical_code": "KIDNEY_CREATININE",
+    "test_name": "Serum Creatinine",
+    "verified_aliases": ["Creatinine", "S. Creatinine", "Blood Creatinine"],
+    "standard_unit": "mg/dL",
+    "definition": "Creatinine is a normal chemical waste product produced by muscle metabolism that healthy kidneys filter out of the blood and excrete into urine.",
+    "test_purpose": "Primary marker used to evaluate kidney filtration function and calculate estimated Glomerular Filtration Rate (eGFR).",
+    "what_it_measures": "The level of creatinine circulating in the blood prior to renal filtration.",
+    "clinical_significance_high": "Elevated serum creatinine suggests that kidneys may not be filtering waste at full efficiency. It can also be caused by severe dehydration or high protein/creatine intake.",
+    "clinical_significance_low": "Low creatinine levels can occur with reduced muscle mass, advanced age, or malnutrition.",
+    "dietary_lifestyle_factors": "Strenuous weight lifting, high meat consumption, or creatine supplements can elevate serum levels without indicating kidney disease.",
+    "doctor_questions_bank": [
+      "What was my calculated estimated Glomerular Filtration Rate (eGFR) along with this creatinine?",
+      "Could hydration level or recent intense workout have influenced this reading?",
+      "Do you recommend checking a routine urine test for protein/microalbumin?"
+    ],
+    "sources": [
+      {
+        "source_id": "MEDLINEPLUS_CREATININE",
+        "name": "Creatinine Test",
+        "organization": "National Library of Medicine (MedlinePlus)",
+        "url": "https://medlineplus.gov/lab-tests/creatinine-test/",
+        "trust_tier": "Primary Patient-Friendly",
+        "description": "Patient-facing explanation of creatinine tests, renal function, and eGFR."
+      }
+    ],
+    "review_status": "Approved",
+    "last_reviewed": "2026-03-01",
+    "version": "1.0.0"
+  },
+  {
+    "canonical_code": "THYROID_TSH",
+    "test_name": "Thyroid Stimulating Hormone (TSH)",
+    "verified_aliases": ["TSH", "Serum TSH", "Ultrasensitive TSH"],
+    "standard_unit": "uIU/mL",
+    "definition": "TSH is a hormone released by the pituitary gland in the brain that signals the thyroid gland in the neck to produce thyroid hormones (T3 and T4).",
+    "test_purpose": "The primary sensitive screening test for thyroid disorders, including hypothyroidism (underactive) and hyperthyroidism (overactive).",
+    "what_it_measures": "Pituitary signaling hormone concentration regulating thyroid gland output.",
+    "clinical_significance_high": "A high TSH suggests the pituitary is sending extra signals because thyroid hormone output is low (hypothyroidism) or due to recovery from illness.",
+    "clinical_significance_low": "A low TSH suggests the thyroid may be overactive (hyperthyroidism) or suppressed by thyroid medication or pituitary issues.",
+    "dietary_lifestyle_factors": "Biotin (vitamin B7) supplements can cause inaccurate TSH readings in common laboratory assays and should typically be paused before testing with clinician advice.",
+    "doctor_questions_bank": [
+      "Would it be helpful to test Free T4 and Free T3 alongside this TSH level?",
+      "Could any supplements I take (like Biotin/multivitamins) have interfered with the assay?",
+      "Are my reported symptoms (energy levels, weight, temperature sensitivity) consistent with this reading?"
+    ],
+    "sources": [
+      {
+        "source_id": "MEDLINEPLUS_TSH",
+        "name": "TSH (Thyroid Stimulating Hormone) Test",
+        "organization": "National Library of Medicine (MedlinePlus)",
+        "url": "https://medlineplus.gov/lab-tests/tsh-thyroid-stimulating-hormone-test/",
+        "trust_tier": "Primary Patient-Friendly",
+        "description": "Explains pituitary-thyroid feedback loops, normal ranges, and follow-up tests."
+      }
+    ],
+    "review_status": "Approved",
+    "last_reviewed": "2026-03-01",
+    "version": "1.0.0"
+  }
+]
